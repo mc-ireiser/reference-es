@@ -3,47 +3,44 @@ title: pulseInLong()
 categories: [ "Functions" ]
 subCategories: [ "Advanced I/O" ]
 ---
+// ARDUINO LANGUAGE REFERENCE TAG (above)   ►►►►► ALWAYS INCLUDE IN YOUR FILE ◄◄◄◄◄
 
-
-
-
-
+// PAGE TITLE
 = pulseInLong()
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
 --
 
 [float]
-=== Description
-Reads a pulse (either HIGH or LOW) on a pin. For example, if value is HIGH, `pulseInLong()` waits for the pin to go `HIGH`, starts timing, then waits for the pin to go `LOW` and stops timing. Returns the length of the pulse in microseconds or 0 if no complete pulse was received within the timeout.
+=== Descripción
+Lee un pulso (`HIGH` o `LOW`) en un pin. Por ejemplo, si `value` es `HIGH`, `pulseInLong()` espera a que el pin sea `HIGH`, comienza a temporizar, luego espera a que el pin vaya a `LOW` y detiene el cronometraje. Devuelve la duración del pulso en microsegundos o cero (`0`) si no se recibe un pulso completo dentro del tiempo de espera.
 
-The timing of this function has been determined empirically and will probably show errors in shorter pulses. Works on pulses from 10 microseconds to 3 minutes in length. Please also note that if the pin is already high when the function is called, it will wait for the pin to go LOW and then HIGH before it starts counting. This routine can be used only if interrupts are activated. Furthermore the highest resolution is obtained with large intervals.
-[%hardbreaks]
+El tiempo de esta función se ha determinado empíricamente y probablemente muestre errores en pulsos cortos. Funciona en pulsos de 10 microsegundos a 3 minutos de duración. Tenga en cuenta que si el pin ya está `HIGH` cuando se llama a la función, esta esperará a que el pin pase a `LOW` y luego a `HIGH` antes de comenzar a contar. Esta rutina puede usarse solo si las interrupciones están activadas. Además, la resolución más alta se obtiene con intervalos grandes.
 
 
 [float]
-=== Syntax
+=== Sintaxis
 `pulseInLong(pin, value)`
 
 `pulseInLong(pin, value, timeout)`
 
-[float]
-=== Parameters
-`pin`: the number of the pin on which you want to read the pulse. (int)
 
-`value`: type of pulse to read: either link:../../../variables/constants/constants/[HIGH] or link:../../../variables/constants/constants/[LOW]. (int)
-
-`timeout` (optional): the number of microseconds to wait for the pulse to start; default is one second (unsigned long)
 [float]
-=== Returns
-the length of the pulse (in microseconds) or 0 if no pulse started before the timeout (unsigned long)
+=== Parámetros
+`pin`: El número del pin en el que desea leer el pulso - `(int)`.
+
+`value`: Tipo de pulso a leer: ya sea link:../../../variables/constants/constants/[`HIGH`] o link:../../../variables/constants/constants/[`LOW`] - `(int)`.
+
+`timeout` (opcional): El número de microsegundos que esperará a que comience el pulso; el valor predeterminado es un segundo - `(unsigned long)`.
+
+
+[float]
+=== Retorno
+la duración del pulso (en microsegundos) o cero (`0`) si no se inició el pulso antes del tiempo determinado (`timeout`) - `(unsigned long)`.
 
 --
 // OVERVIEW SECTION ENDS
-
-
 
 
 // HOW TO USE SECTION STARTS
@@ -51,10 +48,11 @@ the length of the pulse (in microseconds) or 0 if no pulse started before the ti
 --
 
 [float]
-=== Example Code
+=== Código de ejemplo
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-The example calculated the time duration of a pulse on pin 7.
-
+El ejemplo calcula la duración de un pulso en el pin 7.
+[%hardbreaks]
+// CODE
 [source,arduino]
 ----
 int pin = 7;
@@ -68,11 +66,11 @@ void loop() {
   duration = pulseInLong(pin, HIGH);
 }
 ----
-[%hardbreaks]
+
 
 [float]
-=== Notes and Warnings
-This function relies on micros() so cannot be used in link:../../interrupts/nointerrupts[noInterrupts()] context.
+=== Notas y advertencias
+Esta función se basa en `micros()` por lo que no se puede usar en el contexto link:../../interrupts/nointerrupts[`noInterrupts()`].
 
 --
 // HOW TO USE SECTION ENDS

@@ -3,48 +3,50 @@ title: shiftOut()
 categories: [ "Functions" ]
 subCategories: [ "Advanced I/O" ]
 ---
+// ARDUINO LANGUAGE REFERENCE TAG (above)   ►►►►► ALWAYS INCLUDE IN YOUR FILE ◄◄◄◄◄
 
+// PAGE TITLE
 = shiftOut()
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
 --
 
 [float]
-=== Description
-Shifts out a byte of data one bit at a time. Starts from either the most (i.e. the leftmost) or least (rightmost) significant bit. Each bit is written in turn to a data pin, after which a clock pin is pulsed (taken high, then low) to indicate that the bit is available.
+=== Descripción
+Cambia en un byte de datos, un bit por vez. Comienza desde el bit más significativo (es decir, el más a la izquierda) o menos significativo (más a la derecha). Cada bit se escribe a su vez en un pin de datos, después de lo cual se pulsa un pin de reloj (tomado en `HIGH`, y luego en `LOW`) para indicar que el bit está disponible.
 
-Note- if you're interfacing with a device that's clocked by rising edges, you'll need to make sure that the clock pin is low before the call to `shiftOut()`, e.g. with a call to `digitalWrite(clockPin, LOW)`.
 
-This is a software implementation; see also the linkhttps://www.arduino.cc/en/Reference/SPI[SPI library], which provides a hardware implementation that is faster but works only on specific pins.
+Notas:
 [%hardbreaks]
+Si está interactuando con un dispositivo que está marcado por bordes de subida, deberá asegurarse de que el pin del reloj esté `LOW` antes de la primera llamada a `shiftIn()`. + 
+Ejemplo: con una llamada a `digitalWrite(clockPin, LOW)`.
+
+Esta es una implementación de software; Arduino también proporciona una link:https://www.arduino.cc/en/Reference/SPI[librería SPI] que usa la implementación de hardware, que es más rápida pero solo funciona en pines específicos.
 
 
 [float]
-=== Syntax
+=== Sintaxis
 `shiftOut(dataPin, clockPin, bitOrder, value)`
 
 
 [float]
-=== Parameters
-`dataPin`: the pin on which to output each bit (int)
+=== Parámetros
+`dataPin`: Pin en el que sale cada bit - `(int)`
 
-`clockPin`: the pin to toggle once the dataPin has been set to the correct value (int)
+`clockPin`: Pin que cambia una vez que el `dataPin`  se ha establecido en el valor correcto - `(int)`
 
-`bitOrder`: which order to shift out the bits; either MSBFIRST or LSBFIRST.
-(Most Significant Bit First, or, Least Significant Bit First)
+`bitOrder`: Orden en que se desplazan los bits de salida; ya sea `MSBFIRST` o `LSBFIRST`. (Most Significant Bit First, Least Significant Bit First)
 
-`value`: the data to shift out. (byte)
+`value`: Datos de salida - `(byte)`
+
 
 [float]
-=== Returns
-Nothing
+=== Retorno
+Nada
 
 --
 // OVERVIEW SECTION ENDS
-
-
 
 
 // HOW TO USE SECTION STARTS
@@ -52,10 +54,12 @@ Nothing
 --
 
 [float]
-=== Example Code
+=== Código de ejemplo
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-For accompanying circuit, see the http://arduino.cc/en/Tutorial/ShiftOut[tutorial on controlling a 74HC595 shift register].
+Para conocer el circuito mire el tutorial http://arduino.cc/en/Tutorial/ShiftOut[controlling a 74HC595 shift register].
 
+[%hardbreaks]
+// CODE
 [source,arduino]
 ----
 //**************************************************************//
@@ -96,11 +100,14 @@ void loop() {
 ----
 [%hardbreaks]
 
-[float]
-=== Notes and Warnings
-The dataPin and clockPin must already be configured as outputs by a call to link:../../digital-io/pinmode[pinMode()].
 
-shiftOut is currently written to output 1 byte (8 bits) so it requires a two step operation to output values larger than 255.
+[float]
+=== Notas y advertencias
+El `dataPin` y el `clockPin` deben estar configurados como salidas mediante una llamada a link:../../digital-io/pinmode[pinMode()].
+
+`shiftOut` se escribe en el byte de salida 1 (8 bits) por lo que se requiere una operación de dos pasos para generar valores superiores a 255.
+
+// CODE
 [source,arduino]
 ----
 // Do this for MSBFIRST serial
@@ -117,7 +124,6 @@ shiftOut(dataPin, clock, LSBFIRST, data);
 // shift out highbyte
 shiftOut(dataPin, clock, LSBFIRST, (data >> 8));
 ----
-[%hardbreaks]
 
 --
 // HOW TO USE SECTION ENDS

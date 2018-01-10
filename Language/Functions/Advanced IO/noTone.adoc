@@ -1,42 +1,38 @@
 ---
 title: noTone()
-title_expanded: ""
 categories: [ "Functions" ]
 subCategories: [ "Advanced I/O" ]
-aliases: [ /language/functions/advanced-io/noTone/ ]
 ---
+// ARDUINO LANGUAGE REFERENCE TAG (above)   ►►►►► ALWAYS INCLUDE IN YOUR FILE ◄◄◄◄◄
 
-
+// PAGE TITLE
 = noTone()
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
 --
 
 [float]
-=== Description
-Stops the generation of a square wave triggered by `tone()`. Has no effect if no tone is being generated.
-[%hardbreaks]
+=== Descripción
+Detiene la generación de una onda cuadrada activada por `tone()`. Carece de efecto si no se está generando algún tono.
 
 
 [float]
-=== Syntax
+=== Sintaxis
 `noTone(pin)`
 
 
 [float]
-=== Parameters
-`pin`: the pin on which to stop generating the tone
+=== Parámetros
+`pin`: Pin en el cual se desea dejar de generar el tono - `(int)`.
+
 
 [float]
-=== Returns
-Nothing
+=== Retorno
+Nada
 
 --
 // OVERVIEW SECTION ENDS
-
-
 
 
 // HOW TO USE SECTION STARTS
@@ -44,9 +40,8 @@ Nothing
 --
 
 [float]
-=== Notes and Warnings
-If you want to play different pitches on multiple pins, you need to call noTone() on one pin before calling `tone()` on the next pin.
-[%hardbreaks]
+=== Notas y advertencias
+Si desea reproducir tonos diferentes en varios pines, debe llamar a `noTone()` en un pin antes de llamar a `tone()` en el siguiente pin.
 
 --
 // HOW TO USE SECTION ENDS
