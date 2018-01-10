@@ -14,7 +14,7 @@ subCategories: [ "Analog I/O" ]
 
 [float]
 === Descripción
-Lee el valor del pin analógico especificado. La placa Arduino contiene un convertidor analógico a digital de 6 canales (8 canales en Arduino Mini y Nano, 16 canales en Arduino Mega). Esto significa que mapeará voltajes de entrada entre `0` y `5` voltios en valores enteros entre `0` y `1023`. Esto produce una resolución entre las lecturas de: `5 voltios / 1024 unidades` o, 0.0049 voltios (4.9 mV) por unidad. El rango de entrada y la resolución se pueden cambiar usando link:../analogreference[`analogReference()`].
+Lee el valor del pin analógico especificado. La placa Arduino contiene un convertidor analógico a digital de 6 canales (8 canales en Arduino Mini y Nano, 16 canales en Arduino Mega). Esto significa que mapeará voltajes de entrada entre `0` y `5` voltios en valores enteros entre `0` y `1023`. Esto produce una resolución entre las lecturas de: `5 voltios / 1024 unidades` o, `0.0049` voltios (4.9 mV) por unidad. El rango de entrada y la resolución se pueden cambiar usando link:../analogreference[`analogReference()`].
 
 Se necesitan aproximadamente 100 microsegundos (0,0001 s) para leer una entrada analógica, por lo que la velocidad máxima de lectura es aproximadamente 10.000 veces por segundo.
 
