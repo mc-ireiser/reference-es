@@ -1,9 +1,8 @@
 = Reference-es
 
-Reference-es is the repo for the Language Reference documentation of the Arduino syntax in **Spanish**.  
-All the Reference terms files are in AsciiDoc format.
+reference-es es el repositorio en español de la documentación de referencia para la sintaxis del lenguaje Arduino. Todos los archivos de términos de referencia están en formato AsciiDoc.
 
-Gracias por tomarte el tiempo para contribuir a contenido sobre Arduino, eso es de mucha ayuda para toda la comunidad Arduino.
+Gracias por tomarse el tiempo para contribuir con el contenido de Arduino, esto es realmente útil para toda la Comunidad Arduino. Si desea obtener más información sobre cómo contribuir a este proyecto, revise este https://create.arduino.cc/projecthub/Arduino_Genuino/contribute-to-the-arduino-reference-af7c37[tutorial paso a paso].
 
 == Editando y Creando Contenido
 Si deseas contribuir con nuevo contenido, crea un archivo nuevo (con cualquier editor de texto o codigo) y guardalo con extension .adoc.  
