@@ -11,18 +11,18 @@ En https://raw.githubusercontent.com/arduino/reference-en/master/AsciiDoc_sample
 
 Si quieres contribuir a la guiá de referencia o editar contenido existente, puedes encontrar dos plantillas en reference-en/AsciiDoc_sample/Reference_Terms:
 
-* Usa https://raw.githubusercontent.com/arduino/reference-en/master/AsciiDoc_sample/Reference_Terms/AsciiDoc_Template-Single_Entity.adoc[`AsciiDoc_Template-Single_Entity.adoc`] (presentado https://https://www.arduino.cc/reference/en/asciidoc_sample/reference_terms/asciidoc_template-single_entity/[aqui]) para términos como link:http://arduino.cc/en/Reference/AnalogWrite[analogWrite].
-* Usa https://raw.githubusercontent.com/arduino/reference-en/master/AsciiDoc_sample/Reference_Terms/AsciiDoc_Template-Parent_Of_Entities.adoc[`AsciiDoc_Template-Parent_Of_Entities.adoc`] (presentado https://https://www.arduino.cc/reference/en/asciidoc_sample/reference_terms/asciidoc_template-parent_of_entities/[aqui]) para grupos de funciones como link:http://arduino.cc/en/Reference/Serial[Serial].
+* Utiliza https://raw.githubusercontent.com/arduino/reference-en/master/AsciiDoc_sample/Reference_Terms/AsciiDoc_Template-Single_Entity.adoc[`AsciiDoc_Template-Single_Entity.adoc`] (presentado https://https://www.arduino.cc/reference/en/asciidoc_sample/reference_terms/asciidoc_template-single_entity/[aqui]) para términos como link:http://arduino.cc/en/Reference/AnalogWrite[analogWrite].
+* Utiliza https://raw.githubusercontent.com/arduino/reference-en/master/AsciiDoc_sample/Reference_Terms/AsciiDoc_Template-Parent_Of_Entities.adoc[`AsciiDoc_Template-Parent_Of_Entities.adoc`] (presentado https://https://www.arduino.cc/reference/en/asciidoc_sample/reference_terms/asciidoc_template-parent_of_entities/[aqui]) para grupos de funciones como link:http://arduino.cc/en/Reference/Serial[Serial].
 
 Por favor toma nota de que cada archivo de referencia debería incluir al menos una descripción, algún código de ejemplo, y enlaces a otra información relevante (sección ver también).
 
-Si necesitas adicionar imágenes al Asciidoc por favor crea una carpeta llamada attachments en el mismo directorio que el archivo Asciidoc . Las imágenes se pueden grabar en los formatos SVG y PNG, tamaño máximo 200KB.
+Si necesitas adicionar imágenes al Asciidoc por favor crea una carpeta llamada attachments en el mismo directorio que el archivo Asciidoc. Las imágenes se pueden grabar en los formatos SVG y PNG, tamaño máximo 200KB.
 
 == Contribuir Contenido en Github
 
 Si no estas familiarizado con Git puedes contribuir con contenido directamente en GitHub mediante su interfaz online. Creamos un corto tutorial para enseñarte como, https://create.arduino.cc/projecthub/Arduino_Genuino/contribute-to-the-arduino-reference-af7c37[aquí]
 
-link:https://help.github.com/articles/editing-files-in-another-user-s-repository/[también puedes seguir esta guía] (escrita por el equipo de GitHub) para aprender como editar un archivo .adoc y proponer un cambio en el mismo al equipo de Arduino.  
+link:https://help.github.com/articles/editing-files-in-another-user-s-repository/[También puedes seguir esta guía] (escrita por el equipo de GitHub) para aprender como editar un archivo .adoc y proponer un cambio en el mismo al equipo de Arduino.  
 Cuando sugieras un cambio, por favor sigue los lineamientos descritos en los archivos plantilla de referencia.
 
 
