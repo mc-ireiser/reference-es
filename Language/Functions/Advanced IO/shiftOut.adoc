@@ -102,7 +102,7 @@ void loop() {
 
 [float]
 === Notas y advertencias
-El `dataPin` y el `clockPin` deben estar configurados como salidas mediante una llamada a link:../../digital-io/pinmode[pinMode()].
+El pin `dataPin` y el pin `clockPin` deben estar configurados como salidas mediante una llamada a link:../../digital-io/pinmode[pinMode()].
 
 `shiftOut` se escribe en el byte de salida 1 (8 bits) por lo que se requiere una operación de dos pasos para generar valores superiores a 255.
 
