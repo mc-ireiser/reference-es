@@ -16,13 +16,12 @@ subCategories: [ "Advanced I/O" ]
 === Descripción
 Cambia en un byte de datos, un bit por vez. Comienza desde el bit más significativo (es decir, el más a la izquierda) o menos significativo (más a la derecha). Cada bit se escribe a su vez en un pin de datos, después de lo cual se pulsa un pin de reloj (tomado en `HIGH`, y luego en `LOW`) para indicar que el bit está disponible.
 
-
-Notas:
+[float]
+==== Notas:
+* Si está interactuando con un dispositivo que está marcado por bordes de subida, deberá asegurarse de que el pin del reloj esté `LOW` antes de la primera llamada a `shiftIn()`. Ejemplo: con una llamada a `digitalWrite(clockPin, LOW)`.
 [%hardbreaks]
-Si está interactuando con un dispositivo que está marcado por bordes de subida, deberá asegurarse de que el pin del reloj esté `LOW` antes de la primera llamada a `shiftIn()`. + 
-Ejemplo: con una llamada a `digitalWrite(clockPin, LOW)`.
 
-Esta es una implementación de software; Arduino también proporciona una link:https://www.arduino.cc/en/Reference/SPI[librería SPI] que usa la implementación de hardware, que es más rápida pero solo funciona en pines específicos.
+* Esta es una implementación de software; Arduino también proporciona una link:https://www.arduino.cc/en/Reference/SPI[librería SPI] que usa la implementación de hardware, que es más rápida pero solo funciona en pines específicos.
 
 
 [float]
