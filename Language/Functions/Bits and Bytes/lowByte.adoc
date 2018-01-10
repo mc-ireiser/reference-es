@@ -3,11 +3,9 @@ title: lowByte()
 categories: [ "Functions" ]
 subCategories: [ "Bits and Bytes" ]
 ---
+// ARDUINO LANGUAGE REFERENCE TAG (above)   ►►►►► ALWAYS INCLUDE IN YOUR FILE ◄◄◄◄◄
 
-
-
-
-
+// PAGE TITLE
 = lowByte()
 
 
@@ -16,13 +14,12 @@ subCategories: [ "Bits and Bytes" ]
 --
 
 [float]
-=== Description
-Extracts the low-order (rightmost) byte of a variable (e.g. a word).
-[%hardbreaks]
+=== Descripción
+Extrae el byte de orden inferior (más a la derecha) de una variable (por ejemplo, una palabra).
 
 
 [float]
-=== Syntax
+=== Sintaxis
 `lowByte(x)`
 
 

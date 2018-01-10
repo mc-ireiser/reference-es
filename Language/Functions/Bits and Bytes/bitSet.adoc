@@ -3,26 +3,24 @@ title: bitSet()
 categories: [ "Functions" ]
 subCategories: [ "Bits and Bytes" ]
 ---
+// ARDUINO LANGUAGE REFERENCE TAG (above)   ►►►►► ALWAYS INCLUDE IN YOUR FILE ◄◄◄◄◄
 
-
-
-
-
+// PAGE TITLE
 = bitSet()
 
 
 // OVERVIEW SECTION STARTS
-Sets (writes a 1 to) a bit of a numeric variable.
+
 [#overview]
 --
 
 [float]
-=== Description
-[%hardbreaks]
+=== Descripción
+Establece (escribe un 1) un bit de una variable numérica.
 
 
 [float]
-=== Syntax
+=== Sintaxis
 `bitSet(x, n)`
 
 

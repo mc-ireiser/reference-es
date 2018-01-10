@@ -3,11 +3,9 @@ title: bitClear()
 categories: [ "Functions" ]
 subCategories: [ "Bits and Bytes" ]
 ---
+// ARDUINO LANGUAGE REFERENCE TAG (above)   ►►►►► ALWAYS INCLUDE IN YOUR FILE ◄◄◄◄◄
 
-
-
-
-
+// PAGE TITLE
 = bitClear()
 
 
@@ -16,13 +14,12 @@ subCategories: [ "Bits and Bytes" ]
 --
 
 [float]
-=== Description
-Clears (writes a 0 to) a bit of a numeric variable.
-[%hardbreaks]
+=== Descripción
+Limpia (escribe un 0) un bit de una variable numérica.
 
 
 [float]
-=== Syntax
+=== Sintaxis
 `bitClear(x, n)`
 
 

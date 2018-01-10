@@ -3,11 +3,9 @@ title: bitRead()
 categories: [ "Functions" ]
 subCategories: [ "Bits and Bytes" ]
 ---
+// ARDUINO LANGUAGE REFERENCE TAG (above)   ►►►►► ALWAYS INCLUDE IN YOUR FILE ◄◄◄◄◄
 
-
-
-
-
+// PAGE TITLE
 = bitRead()
 
 
@@ -16,13 +14,12 @@ subCategories: [ "Bits and Bytes" ]
 --
 
 [float]
-=== Description
-Reads a bit of a number.
-[%hardbreaks]
+=== Descripción
+Lee un bit de un número.
 
 
 [float]
-=== Syntax
+=== Sintaxis
 `bitRead(x, n)`
 
 

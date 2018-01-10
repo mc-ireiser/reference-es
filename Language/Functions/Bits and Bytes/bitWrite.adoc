@@ -3,11 +3,9 @@ title: bitWrite()
 categories: [ "Functions" ]
 subCategories: [ "Bits and Bytes" ]
 ---
+// ARDUINO LANGUAGE REFERENCE TAG (above)   ►►►►► ALWAYS INCLUDE IN YOUR FILE ◄◄◄◄◄
 
-
-
-
-
+// PAGE TITLE
 = bitWrite()
 
 
@@ -16,13 +14,12 @@ subCategories: [ "Bits and Bytes" ]
 --
 
 [float]
-=== Description
-Writes a bit of a numeric variable.
-[%hardbreaks]
+=== Descripción
+Escribe un bit de una variable numérica.
 
 
 [float]
-=== Syntax
+=== Sintaxis
 `bitWrite(x, n, b)`
 
 

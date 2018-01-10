@@ -3,11 +3,9 @@ title: bit()
 categories: [ "Functions" ]
 subCategories: [ "Bits and Bytes" ]
 ---
+// ARDUINO LANGUAGE REFERENCE TAG (above)   ►►►►► ALWAYS INCLUDE IN YOUR FILE ◄◄◄◄◄
 
-
-
-
-
+// PAGE TITLE
 = bit()
 
 
@@ -16,13 +14,12 @@ subCategories: [ "Bits and Bytes" ]
 --
 
 [float]
-=== Description
-Computes the value of the specified bit (bit 0 is 1, bit 1 is 2, bit 2 is 4, etc.).
-[%hardbreaks]
+=== Descripción
+Calcula el valor del bit especificado (el bit 0 es 1, el bit 1 es 2, el bit 2 es 4, etc.).
 
 
 [float]
-=== Syntax
+=== Sintaxis
 `bit(n)`
 
 

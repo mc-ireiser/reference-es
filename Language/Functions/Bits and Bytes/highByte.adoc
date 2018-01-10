@@ -3,11 +3,9 @@ title: highByte()
 categories: [ "Functions" ]
 subCategories: [ "Bits and Bytes" ]
 ---
+// ARDUINO LANGUAGE REFERENCE TAG (above)   ►►►►► ALWAYS INCLUDE IN YOUR FILE ◄◄◄◄◄
 
-
-
-
-
+// PAGE TITLE
 = highByte()
 
 
@@ -16,13 +14,12 @@ subCategories: [ "Bits and Bytes" ]
 --
 
 [float]
-=== Description
-Extracts the high-order (leftmost) byte of a word (or the second lowest byte of a larger data type).
-[%hardbreaks]
+=== Descripción
+Extrae el byte de orden superior (extremo) de una palabra (o el segundo byte más bajo de un tipo de datos más grande).
 
 
 [float]
-=== Syntax
+=== Sintaxis
 `highByte(x)`
 
 
