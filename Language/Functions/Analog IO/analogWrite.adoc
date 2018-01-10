@@ -34,9 +34,9 @@ La función `analogWrite()` no tiene nada que ver con los pines analógicos o la
 
 [float]
 === Parámetros
-`pin`: the pin to write to - (int).
+`pin`: the pin to write to - `(int)`
 
-`value`: Ciclo de trabajo: entre `0` (siempre apagado) y `255` (siempre encendido) - (int)
+`value`: Ciclo de trabajo: entre `0` (siempre apagado) y `255` (siempre encendido) - `(int)`
 
 
 [float]

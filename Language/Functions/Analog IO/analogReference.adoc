@@ -30,7 +30,7 @@ Configura el voltaje de referencia utilizado para la entrada analógica (es deci
 
 [float]
 === Parámetros
-`type`: Qué tipo de referencia utilizar (DEFAULT, INTERNAL, INTERNAL1V1, INTERNAL2V56, EXTERNAL).
+`type`: Qué tipo de referencia utilizar `(DEFAULT, INTERNAL, INTERNAL1V1, INTERNAL2V56, EXTERNAL)`
 
 
 [float]
