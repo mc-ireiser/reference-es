@@ -3,47 +3,42 @@ title: analogReference()
 categories: [ "Functions" ]
 subCategories: [ "Analog I/O" ]
 ---
+// ARDUINO LANGUAGE REFERENCE TAG (above)   ►►►►► ALWAYS INCLUDE IN YOUR FILE ◄◄◄◄◄
 
-
-//
-
-
+// PAGE TITLE
 = analogReference()
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
 --
 
 [float]
-=== Description
-Configures the reference voltage used for analog input (i.e. the value used as the top of the input range). The options are:
+=== Descripción
+Configura el voltaje de referencia utilizado para la entrada analógica (es decir, el valor utilizado como la parte superior del rango de entrada). Las opciones son:
 
-* DEFAULT: the default analog reference of 5 volts (on 5V Arduino boards) or 3.3 volts (on 3.3V Arduino boards)
-* INTERNAL: an built-in reference, equal to 1.1 volts on the ATmega168 or ATmega328P and 2.56 volts on the ATmega8 (not available on the Arduino Mega)
-* INTERNAL1V1: a built-in 1.1V reference (Arduino Mega only)
-* INTERNAL2V56: a built-in 2.56V reference (Arduino Mega only)
-* EXTERNAL: the voltage applied to the AREF pin (0 to 5V only) is used as the reference.
-[%hardbreaks]
+* DEFAULT: La referencia analógica predeterminada de `5` voltios (en placas Arduino de 5V) o `3.3` voltios (en placas Arduino de 3.3V). +
+* INTERNAL: Una referencia incorporada, igual a `1.1` voltios en el ATmega168 o ATmega328P y `2.56` voltios en el ATmega8 (no disponible en el Arduino Mega). +
+* INTERNAL1V1: Una referencia incorporada de `1.1` voltios (solo Arduino Mega). +
+* INTERNAL2V56: Una referencia incorporada de `2.56` voltios (solo Arduino Mega). +
+* EXTERNAL: La tensión aplicada al pin `AREF` (de `0` a `5` voltios solamente) se utiliza como referencia. +
 
 
 [float]
-=== Syntax
+=== Sintaxis
 `analogReference(type)`
 
 
 [float]
-=== Parameters
-`type`: which type of reference to use (DEFAULT, INTERNAL, INTERNAL1V1, INTERNAL2V56, or EXTERNAL).
+=== Parámetros
+`type`: Qué tipo de referencia utilizar (DEFAULT, INTERNAL, INTERNAL1V1, INTERNAL2V56, EXTERNAL).
+
 
 [float]
-=== Returns
-Nothing
+=== Retorno
+Nada
 
 --
 // OVERVIEW SECTION ENDS
-
-
 
 
 // HOW TO USE SECTION STARTS
@@ -51,13 +46,12 @@ Nothing
 --
 
 [float]
-=== Notes and Warnings
-After changing the analog reference, the first few readings from `analogRead()` may not be accurate.
+=== Notas y advertencias
+Después de cambiar la referencia analógica, las primeras lecturas de `analogRead()` pueden no ser precisas.
 
-*Don't use anything less than 0V or more than 5V for external reference voltage on the AREF pin! If you're using an external reference on the AREF pin, you must set the analog reference to EXTERNAL before calling `analogRead()`.* Otherwise, you will short together the active reference voltage (internally generated) and the AREF pin, possibly damaging the microcontroller on your Arduino board.
+*¡No utilice nada inferior a 0 V o más de 5 V para la tensión de referencia externa en el pin AREF! Si está utilizando una referencia externa en el pin AREF, debe establecer la referencia analógica en `EXTERNAL` antes de llamar a `analogRead()`.* De lo contrario, acortará el voltaje de referencia activo (generado internamente) y el pin AREF, posiblemente dañando el microcontrolador en su placa Arduino.
 
-Alternatively, you can connect the external reference voltage to the AREF pin through a 5K resistor, allowing you to switch between external and internal reference voltages. Note that the resistor will alter the voltage that gets used as the reference because there is an internal 32K resistor on the AREF pin. The two act as a voltage divider, so, for example, 2.5V applied through the resistor will yield 2.5 * 32 / (32 + 5) = ~2.2V at the AREF pin.
-[%hardbreaks]
+Alternativamente, puede conectar la tensión de referencia externa al pin AREF a través de una resistencia de `5K`, lo que le permite cambiar entre voltajes de referencia externos e internos. Tenga en cuenta que la resistencia alterará el voltaje que se usa como referencia porque hay una resistencia interna de `32K` en el pin AREF. Los dos actúan como un divisor de voltaje, por lo que, por ejemplo, `2.5` voltios aplicados a través de la resistencia producirán `2.5 * 32 / (32 + 5) = (+/-) 2.2 voltios` en el pin AREF.
 
 --
 // HOW TO USE SECTION ENDS
@@ -68,10 +62,10 @@ Alternatively, you can connect the external reference voltage to the AREF pin th
 --
 
 [float]
-=== See also
+=== Ver también
 
 [role="example"]
-* #EXAMPLE# http://arduino.cc/en/Tutorial/AnalogInputPins[Description of analog input pins]
+* #Ejemplo# http://arduino.cc/en/Tutorial/AnalogInputPins[Description of analog input pins]
 
 --
 // SEE ALSO SECTION ENDS
