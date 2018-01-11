@@ -31,7 +31,7 @@ Lee un bit de un número.
 
 
 [float]
-=== Retorna
+=== Retorno
 Valor del bit (0 o 1).
 
 --

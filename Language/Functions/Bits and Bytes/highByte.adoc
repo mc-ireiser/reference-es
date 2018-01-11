@@ -28,7 +28,7 @@ Extrae el byte de orden superior (extremo) de una palabra (o el segundo byte má
 `x`: Un valor de cualquier tipo.
 
 [float]
-=== Retorna
+=== Retorno
 `byte`
 
 --

@@ -28,7 +28,7 @@ Calcula el valor del bit especificado (el bit `0` es `1`, el bit `1` es `2`, el 
 `n`: bit cuyo valor sera calculado.
 
 [float]
-=== Retorna
+=== Retorno
 Volor del bit.
 
 --

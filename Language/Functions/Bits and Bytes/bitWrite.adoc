@@ -32,7 +32,7 @@ Escribe un bit de una variable numérica.
 `b`: Valor a escribir en el bit (`0` o `1`).
 
 [float]
-=== Retorna
+=== Retorno
 Nada.
 
 --
