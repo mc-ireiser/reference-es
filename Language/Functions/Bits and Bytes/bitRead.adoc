@@ -27,7 +27,7 @@ Lee un bit de un número.
 === Parámetros
 `x`: Número desde el cual leer.
 
-`n`: bit que se leerá, comenzando en 0 para el bit menos significativo (más a la derecha).
+`n`: bit que se leerá, comenzando en `0` para el bit menos significativo (más a la derecha).
 
 
 [float]

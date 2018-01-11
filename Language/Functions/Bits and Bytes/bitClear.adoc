@@ -15,7 +15,7 @@ subCategories: [ "Bits and Bytes" ]
 
 [float]
 === Descripción
-Limpia (escribe un 0) un bit de una variable numérica.
+Limpia (escribe un `0`) un bit de una variable numérica.
 
 
 [float]
@@ -27,7 +27,7 @@ Limpia (escribe un 0) un bit de una variable numérica.
 === Parámetros
 `x`: Variable numérica cuyo bit sera eliminado.
 
-`n`: bit que sera eliminado, comenzando en 0 para el bit menos significativo (más a la derecha).
+`n`: bit que sera eliminado, comenzando en `0` para el bit menos significativo (más a la derecha).
 
 [float]
 === Retorna
