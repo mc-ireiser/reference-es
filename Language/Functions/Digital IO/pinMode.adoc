@@ -15,9 +15,9 @@ subCategories: [ "Digital I/O" ]
 
 [float]
 === Descripción
-Configures the specified pin to behave either as an input or an output. See the description of (http://arduino.cc/en/Tutorial/DigitalPins[digital pins]) for details on the functionality of the pins.
+Configura el pin especificado para que se comporte como una entrada o una salida. Ver la descripción de (http://arduino.cc/en/Tutorial/DigitalPins[digital pins]) para detalles sobre la funcionalidad de los pines.
 
-A partir de Arduino 1.0.1, es posible habilitar las resistencias pullup internas con el modo INPUT_PULLUP. Además, el modo ENTRADA desactiva explícitamente el pullups interno.
+A partir de Arduino 1.0.1, es posible habilitar las resistencias pullup internas con el modo `INPUT_PULLUP`. Además, el modo ENTRADA desactiva explícitamente el pullups interno.
 
 
 [float]
