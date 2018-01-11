@@ -24,14 +24,14 @@ Limpia (escribe un 0) un bit de una variable numérica.
 
 
 [float]
-=== Parameters
-`x`: the numeric variable whose bit to clear
+=== Parámetros
+`x`: Variable numérica cuyo bit sera eliminado
 
-`n`: which bit to clear, starting at 0 for the least-significant (rightmost) bit
+`n`: bit que sera eliminado, comenzando en 0 para el bit menos significativo (más a la derecha)
 
 [float]
-=== Returns
-Nothing
+=== Retorna
+Nada
 
 --
 // OVERVIEW SECTION ENDS

@@ -24,12 +24,12 @@ Extrae el byte de orden superior (extremo) de una palabra (o el segundo byte má
 
 
 [float]
-=== Parameters
-`x`: a value of any type
+=== Parámetros
+`x`: Un valor de cualquier tipo
 
 [float]
-=== Returns
-byte
+=== Retorna
+`byte`
 
 --
 // OVERVIEW SECTION ENDS
@@ -40,10 +40,10 @@ byte
 --
 
 [float]
-=== See also
+=== Ver también
 
 [role="language"]
-* #LANGUAGE# link:../../../variables/data-types/word[word()]
+* #Lenguaje# link:../../../variables/data-types/word[word()]
 
 --
 // SEE ALSO SECTION ENDS

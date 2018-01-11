@@ -24,16 +24,16 @@ Escribe un bit de una variable numérica.
 
 
 [float]
-=== Parameters
-`x`: the numeric variable to which to write
+=== Parámetros
+`x`: Variable numérica a la cual escribir
 
-`n`: which bit of the number to write, starting at 0 for the least-significant (rightmost) bit
+`n`: número del bit a escribir, comenzando en 0 para el bit menos significativo (más a la derecha)
 
-`b`: the value to write to the bit (0 or 1)
+`b`: Valor a escribir en el bit (0 o 1)
 
 [float]
-=== Returns
-Nothing
+=== Retorna
+Nada
 
 --
 // OVERVIEW SECTION ENDS

@@ -24,12 +24,13 @@ Extrae el byte de orden inferior (más a la derecha) de una variable (por ejempl
 
 
 [float]
-=== Parameters
-`x`: a value of any type
+=== Parámetros
+`x`: Un valor de cualquier tipo
 
 [float]
-=== Returns
-byte
+=== Retorna
+`byte`
+
 --
 // OVERVIEW SECTION ENDS
 
@@ -39,10 +40,10 @@ byte
 --
 
 [float]
-=== See also
+=== Ver también
 
 [role="language"]
-* #LANGUAGE# link:../../../variables/data-types/word[word()]
+* #Lenguaje# link:../../../variables/data-types/word[word()]
 
 --
 // SEE ALSO SECTION ENDS

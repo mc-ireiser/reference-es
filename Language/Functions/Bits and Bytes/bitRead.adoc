@@ -24,15 +24,15 @@ Lee un bit de un número.
 
 
 [float]
-=== Parameters
-`x`: the number from which to read
+=== Parámetros
+`x`: Número desde el cual leer.
 
-`n`: which bit to read, starting at 0 for the least-significant (rightmost) bit
+`n`: bit que se leerá, comenzando en 0 para el bit menos significativo (más a la derecha)
 
 
 [float]
-=== Returns
-the value of the bit (0 or 1).
+=== Retorna
+Valor del bit (0 o 1).
 
 --
 // OVERVIEW SECTION ENDS

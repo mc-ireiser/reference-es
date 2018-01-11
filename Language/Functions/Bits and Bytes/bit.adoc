@@ -24,12 +24,12 @@ Calcula el valor del bit especificado (el bit 0 es 1, el bit 1 es 2, el bit 2 es
 
 
 [float]
-=== Parameters
-`n`: the bit whose value to compute
+=== Parámetros
+`n`: bit cuyo valor sera calculado.
 
 [float]
-=== Returns
-The value of the bit.
+=== Retorna
+Volor del bit.
 
 --
 // OVERVIEW SECTION ENDS
