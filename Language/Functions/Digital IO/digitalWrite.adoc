@@ -19,7 +19,7 @@ Escribe un valor `HIGH` o `LOW` en un pin digital.
 
 Si el pin se ha configurado como `OUTPUT` con `pinMode()`, su voltaje se establecerá en el valor correspondiente: `5` voltios (o `3,3` voltios en placas de `3,3` voltios) para `HIGH` y `0` voltios (ground) para `LOW`.
 
-Si el pin se configura como `INPUT`, `digitalWrite()` habilitará (`ALTO`) o deshabilitará (`LOW`) el pullup interno en el pin de entrada. Se recomienda configurar `pinMode()` en `INPUT_PULLUP` para habilitar la resistencia interna de pull-up. Consulte el tutorial de pines digitales para obtener más información.
+Si el pin se configura como `INPUT`, `digitalWrite()` habilitará (`HIGH`) o deshabilitará (`LOW`) el pullup interno en el pin de entrada. Se recomienda configurar `pinMode()` en `INPUT_PULLUP` para habilitar la resistencia interna de pull-up. Consulte el tutorial de pines digitales para obtener más información.
 
 Si no configura el `pinMode()` en `OUTPUT`, y conecta un LED a un pin, al llamar `digitalWrite(HIGH)`, el LED puede aparecer atenuado. Sin establecer explícitamente `pinMode()`, `digitalWrite()` habrá habilitado la resistencia interna de pull-up, que actúa como una gran resistencia limitadora de corriente.
 

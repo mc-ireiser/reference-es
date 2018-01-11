@@ -15,7 +15,7 @@ subCategories: [ "Digital I/O" ]
 
 [float]
 === Descripción
-Lee el valor de un pin digital especificado, ya sea `HIGH` o` LOW`.
+Lee el valor de un pin digital especificado, ya sea `HIGH` o `LOW`.
 
 
 [float]
