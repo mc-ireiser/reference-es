@@ -27,7 +27,7 @@ Por el contrario, ocasionalmente puede ser útil usar secuencias pseudoaleatoria
 
 [float]
 === Retorno
-Nada
+Nada.
 
 --
 // OVERVIEW SECTION ENDS
