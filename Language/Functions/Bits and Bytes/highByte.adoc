@@ -25,7 +25,7 @@ Extrae el byte de orden superior (extremo) de una palabra (o el segundo byte má
 
 [float]
 === Parámetros
-`x`: Un valor de cualquier tipo
+`x`: Un valor de cualquier tipo.
 
 [float]
 === Retorna

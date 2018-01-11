@@ -25,7 +25,7 @@ Extrae el byte de orden inferior (más a la derecha) de una variable (por ejempl
 
 [float]
 === Parámetros
-`x`: Un valor de cualquier tipo
+`x`: Un valor de cualquier tipo.
 
 [float]
 === Retorna

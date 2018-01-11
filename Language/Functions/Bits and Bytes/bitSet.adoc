@@ -28,11 +28,11 @@ Establece (escribe un 1) un bit de una variable numérica.
 === Parámetros
 `x`: Variable numérica cuyo bit sera establecido.
 
-`n`: bit que se establecera, comenzando en 0 para el bit menos significativo (más a la derecha)
+`n`: bit que se establecera, comenzando en 0 para el bit menos significativo (más a la derecha).
 
 [float]
 === Retorna
-Nada
+Nada.
 
 --
 // OVERVIEW SECTION ENDS

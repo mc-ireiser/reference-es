@@ -25,13 +25,13 @@ Limpia (escribe un 0) un bit de una variable numérica.
 
 [float]
 === Parámetros
-`x`: Variable numérica cuyo bit sera eliminado
+`x`: Variable numérica cuyo bit sera eliminado.
 
-`n`: bit que sera eliminado, comenzando en 0 para el bit menos significativo (más a la derecha)
+`n`: bit que sera eliminado, comenzando en 0 para el bit menos significativo (más a la derecha).
 
 [float]
 === Retorna
-Nada
+Nada.
 
 --
 // OVERVIEW SECTION ENDS
