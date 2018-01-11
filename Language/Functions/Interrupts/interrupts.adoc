@@ -3,11 +3,9 @@ title: interrupts()
 categories: [ "Functions" ]
 subCategories: [ "Interrupts" ]
 ---
+// ARDUINO LANGUAGE REFERENCE TAG (above)   ►►►►► ALWAYS INCLUDE IN YOUR FILE ◄◄◄◄◄
 
-
-
-
-
+// PAGE TITLE
 = interrupts()
 
 
@@ -16,28 +14,25 @@ subCategories: [ "Interrupts" ]
 --
 
 [float]
-=== Description
-Re-enables interrupts (after they've been disabled by link:../nointerrupts[nointerrupts()]. Interrupts allow certain important tasks to happen in the background and are enabled by default. Some functions will not work while interrupts are disabled, and incoming communication may be ignored. Interrupts can slightly disrupt the timing of code, however, and may be disabled for particularly critical sections of code.
-[%hardbreaks]
-
+=== Descripción
+Reactiva las interrupciones (después de que hayan sido deshabilitados por link:../nointerrupts[nointerrupts()]). Las interrupciones permiten que ciertas tareas importantes sucedan en segundo plano y están habilitadas de manera predeterminada. Algunas funciones no funcionarán mientras las interrupciones estén deshabilitadas, y la comunicación entrante puede ignorarse. Sin embargo, las interrupciones pueden interrumpir levemente el tiempo del código y pueden deshabilitarse para secciones de código particularmente críticas.
 
 [float]
-=== Syntax
+=== Sintaxis
 `interrupts()`
 
 
 [float]
-=== Parameters
-Nothing
+=== Parámetros
+Nada.
+
 
 [float]
-=== Returns
-Nothing
+=== Retorno
+Nada.
 
 --
 // OVERVIEW SECTION ENDS
-
-
 
 
 // HOW TO USE SECTION STARTS
@@ -45,13 +40,17 @@ Nothing
 --
 
 [float]
-=== Example Code
+=== Código de ejemplo
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-The code enables Interrupts.
+El código habilita `interrupts`.
 
+[%hardbreaks]
+// CODE
 [source,arduino]
 ----
-void setup() {}
+void setup() {
+
+}
 
 void loop()
 {
@@ -61,6 +60,7 @@ void loop()
   // other code here
 }
 ----
+[%hardbreaks]
 
 --
 // HOW TO USE SECTION ENDS
@@ -71,11 +71,11 @@ void loop()
 --
 
 [float]
-=== See also
+=== Ver también
 
 [role="language"]
-* #LANGUAGE# link:../../external-interrupts/attachinterrupt[attachInterrupts()]
-* #LANGUAGE# link:../../external-interrupts/detachinterrupt[detachInterrupts()]
+* #Lenguaje# link:../../external-interrupts/attachinterrupt[attachInterrupts()]
+* #Lenguaje# link:../../external-interrupts/detachinterrupt[detachInterrupts()]
 
 --
 // SEE ALSO SECTION ENDS

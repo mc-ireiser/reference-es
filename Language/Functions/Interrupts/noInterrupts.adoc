@@ -3,11 +3,9 @@ title: noInterrupts()
 categories: [ "Functions" ]
 subCategories: [ "Interrupts" ]
 ---
+// ARDUINO LANGUAGE REFERENCE TAG (above)   ►►►►► ALWAYS INCLUDE IN YOUR FILE ◄◄◄◄◄
 
-
-
-
-
+// PAGE TITLE
 = noInterrupts()
 
 
@@ -16,28 +14,25 @@ subCategories: [ "Interrupts" ]
 --
 
 [float]
-=== Description
-Disables interrupts (you can re-enable them with `interrupts()`). Interrupts allow certain important tasks to happen in the background and are enabled by default. Some functions will not work while interrupts are disabled, and incoming communication may be ignored. Interrupts can slightly disrupt the timing of code, however, and may be disabled for particularly critical sections of code.
-[%hardbreaks]
+=== Descripción
+Deshabilita las interrupciones (puede volver a habilitarlas con `interrupts()`). Las interrupciones permiten que ciertas tareas importantes sucedan en segundo plano y están habilitadas de manera predeterminada. Algunas funciones no funcionarán mientras las interrupciones estén deshabilitadas, y la comunicación entrante puede ignorarse. Sin embargo, las interrupciones pueden interrumpir levemente el tiempo del código y pueden deshabilitarse para secciones de código particularmente críticas.
 
 
 [float]
-=== Syntax
+=== Sintaxis
 `noInterrupts()`
 
 
 [float]
-=== Parameters
-Nothing
+=== Parámetros
+Nada.
 
 [float]
-=== Returns
-Nothing
+=== Retorno
+Nada.
 
 --
 // OVERVIEW SECTION ENDS
-
-
 
 
 // HOW TO USE SECTION STARTS
@@ -45,10 +40,12 @@ Nothing
 --
 
 [float]
-=== Example Code
+=== Código de ejemplo
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-The code shows how to enable interrupts.
+El código muestra cómo habilitar interrupciones.
 
+[%hardbreaks]
+// CODE
 [source,arduino]
 ----
 void setup() {}
@@ -61,6 +58,7 @@ void loop()
   // other code here
 }
 ----
+[%hardbreaks]
 
 --
 // HOW TO USE SECTION ENDS
