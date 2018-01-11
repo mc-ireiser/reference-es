@@ -3,11 +3,9 @@ title: pinMode()
 categories: [ "Functions" ]
 subCategories: [ "Digital I/O" ]
 ---
+// ARDUINO LANGUAGE REFERENCE TAG (above)   ►►►►► ALWAYS INCLUDE IN YOUR FILE ◄◄◄◄◄
 
-
-//
-:ext-relative: .html
-
+// PAGE TITLE
 = pinMode()
 
 
@@ -16,33 +14,30 @@ subCategories: [ "Digital I/O" ]
 --
 
 [float]
-=== Description
+=== Descripción
 Configures the specified pin to behave either as an input or an output. See the description of (http://arduino.cc/en/Tutorial/DigitalPins[digital pins]) for details on the functionality of the pins.
-[%hardbreaks]
-As of Arduino 1.0.1, it is possible to enable the internal pullup resistors with the mode INPUT_PULLUP. Additionally, the INPUT mode explicitly disables the internal pullups.
-[%hardbreaks]
+
+A partir de Arduino 1.0.1, es posible habilitar las resistencias pullup internas con el modo INPUT_PULLUP. Además, el modo ENTRADA desactiva explícitamente el pullups interno.
 
 
 [float]
-=== Syntax
+=== Sintaxis
 `pinMode(pin, mode)`
 
-[float]
-=== Parameters
-`pin`: the number of the pin whose mode you wish to set
-
-`mode`: `INPUT`, `OUTPUT`, or `INPUT_PULLUP`. (see the (http://arduino.cc/en/Tutorial/DigitalPins[digital pins]) page for a more complete description of the functionality.)
-
-//Check how to add links
 
 [float]
-=== Returns
-Nothing
+=== Parámetros
+`pin`: Número del pin cuyo modo desea configurar.
+
+`mode`: `INPUT`, `OUTPUT`, o `INPUT_PULLUP`. (consultar http://arduino.cc/en/Tutorial/DigitalPins[digital pins] para una descripción más completa de la funcionalidad.).
+
+
+[float]
+=== Retorno
+Nada
 
 --
 // OVERVIEW SECTION ENDS
-
-
 
 
 // HOW TO USE SECTION STARTS
@@ -50,10 +45,13 @@ Nothing
 --
 
 [float]
-=== Example Code
-The code makes the digital pin 13 `OUTPUT` and Togles it `HIGH` and `LOW`
+=== Código de ejemplo
+// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+El código configura el pin digital 13 en `OUTPUT` luego alterna entre `HIGH` y `LOW`
 
-//[source,arduino]
+[%hardbreaks]
+// CODE
+[source,arduino]
 ----
 void setup()
 {
@@ -70,9 +68,10 @@ void loop()
 ----
 [%hardbreaks]
 
+
 [float]
-=== Notes and Warnings
-The analog input pins can be used as digital pins, referred to as A0, A1, etc.
+=== Notas y advertencias
+Los pines de entrada analógica se pueden usar como pines digitales, conocidos como A0, A1, etc.
 
 --
 // HOW TO USE SECTION ENDS
@@ -83,10 +82,10 @@ The analog input pins can be used as digital pins, referred to as A0, A1, etc.
 --
 
 [float]
-=== See also
+=== Ver también
 
 [role="example"]
-* #EXAMPLE# http://arduino.cc/en/Tutorial/DigitalPins[Description of the pins on an Arduino board^]
+* #Ejemplo# http://arduino.cc/en/Tutorial/DigitalPins[Description of the pins on an Arduino board]
 
 --
 // SEE ALSO SECTION ENDS

@@ -3,11 +3,9 @@ title: digitalRead()
 categories: [ "Functions" ]
 subCategories: [ "Digital I/O" ]
 ---
+// ARDUINO LANGUAGE REFERENCE TAG (above)   ►►►►► ALWAYS INCLUDE IN YOUR FILE ◄◄◄◄◄
 
-
-//
-:ext-relative: .html
-
+// PAGE TITLE
 = digitalRead()
 
 
@@ -16,28 +14,25 @@ subCategories: [ "Digital I/O" ]
 --
 
 [float]
-=== Description
-Reads the value from a specified digital pin, either `HIGH` or `LOW`.
-[%hardbreaks]
+=== Descripción
+Lee el valor de un pin digital especificado, ya sea `HIGH` o` LOW`.
 
 
 [float]
-=== Syntax
+=== Sintaxis
 `digitalRead(pin)`
 
 
 [float]
-=== Parameters
-`pin`: the number of the digital pin you want to read
+=== Parámetros
+`pin`: Número del pin digital a leer.
 
 [float]
-=== Returns
-`HIGH` or `LOW`
+=== Retorno
+`HIGH` o `LOW`.
 
 --
 // OVERVIEW SECTION ENDS
-
-
 
 
 // HOW TO USE SECTION STARTS
@@ -45,11 +40,13 @@ Reads the value from a specified digital pin, either `HIGH` or `LOW`.
 --
 
 [float]
-=== Example Code
+=== Código de ejemplo
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-Sets pin 13 to the same value as pin 7, declared as an input.
+Establece el pin 13 con el mismo valor que el pin 7, declarado como una entrada.
 
-//[source,arduino]
+[%hardbreaks]
+// CODE
+[source,arduino]
 ----
 int ledPin = 13;   // LED connected to digital pin 13
 int inPin = 7;     // pushbutton connected to digital pin 7
@@ -69,11 +66,12 @@ void loop()
 ----
 [%hardbreaks]
 
-[float]
-=== Notes and Warnings
-If the pin isn't connected to anything, digitalRead() can return either HIGH or LOW (and this can change randomly).
 
-The analog input pins can be used as digital pins, referred to as A0, A1, etc.
+[float]
+=== Notas y advertencias
+Si el pin no está conectado a nada, `digitalRead()` puede regresar `HIGH` o `LOW` (y esto puede cambiar aleatoriamente).
+
+Los pines de entrada analógica se pueden usar como pines digitales, conocidos como A0, A1, etc.
 
 --
 // HOW TO USE SECTION ENDS
@@ -84,10 +82,10 @@ The analog input pins can be used as digital pins, referred to as A0, A1, etc.
 --
 
 [float]
-=== See also
+=== Ver también
 
 [role="example"]
-* #EXAMPLE# Tutorial: (http://arduino.cc/en/Tutorial/DigitalPins[Digital Pins])
+* #Ejemplo# Tutorial: (http://arduino.cc/en/Tutorial/DigitalPins[Digital Pins])
 
 --
 // SEE ALSO SECTION ENDS
