@@ -32,8 +32,8 @@ La función `random()` genera números pseudoaleatorios.
 
 
 [float]
-=== Returns
-A random number between min and max-1 (`long`).
+=== Retorno
+Un número aleatorio entre `min` y `max-1` (`long`).
 
 --
 // OVERVIEW SECTION ENDS
